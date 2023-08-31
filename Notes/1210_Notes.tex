@@ -1,4 +1,4 @@
-\documentclass[11pt, openany, letterpaper]{memoir}
+\documentclass[12pt, openany, letterpaper]{memoir}
 \usepackage{NotesStyle}
 %\renewcommand\thesection{\thechapter\Alph{section}}
 %\renewcommand\thesubsection{\thesection.\Numeral{subsection}}
@@ -55,7 +55,7 @@
 	      \end{itemize}
 	\item Pure substances vs mixtures (Figure 1.1)
 	\item Heterogeneous vs homogeneous mixtures (Figure 1.2)
-  \item ``Solution'' is just another name for an homogeneous mixture
+	\item ``Solution'' is just another name for an homogeneous mixture
 \end{itemize}
 \section{Properties of Matter}
 \begin{itemize}
@@ -75,10 +75,10 @@
 	      \begin{itemize}
 		      \item Phsyical changes do not change the chemical identity of a substance, and can readily be undone - dissolving, phase changes, deformations, temperature changes, etc.
 		      \item Chemical changes cannot be undone because the chemical identity of the substance has changed - oxidation, combustion, corrosion, etc.
-          \item Chemical changes are accompanied by either the release or absorption of energy
-          \item Starting materials in chemical changes are called \emph{reactants}, and the final materials are called \emph{products}
+		      \item Chemical changes are accompanied by either the release or absorption of energy
+		      \item Starting materials in chemical changes are called \emph{reactants}, and the final materials are called \emph{products}
 	      \end{itemize}
-  \item Demo with air and hydrogen balloons
+	\item Demo with air and hydrogen balloons
 \end{itemize}
 \section{Matter and Energy}
 \begin{itemize}
@@ -105,8 +105,8 @@
 		      \item A well-supported hypothesis may become a \emph{scientific theory}
 	      \end{itemize}
 	\item The scientific method is based on the principle of \emph{falsifiability}. It proves bad hypothese false, but can never \emph{prove} a hypothesis to be true
-  \item As a hypothesis survives more and more experimentation, it becomes relieable enough to be considered a \emph{theory}. Theories can later be proven wrong, but the new explanation is almost always a marginal extension of the older theory, which better explains certain edge cases
-  \item Entirely revolutionary new theories, such as Einstein's general relativity, are exceptionally rare
+	\item As a hypothesis survives more and more experimentation, it becomes relieable enough to be considered a \emph{theory}. Theories can later be proven wrong, but the new explanation is almost always a marginal extension of the older theory, which better explains certain edge cases
+	\item Entirely revolutionary new theories, such as Einstein's general relativity, are exceptionally rare
 	\item Figure 1.9 illustrates the differences between scientific laws, hypotheses, and theories
 	\item My story about magnets on string and the importance of following the scientific method
 	      \begin{itemize}
@@ -153,7 +153,7 @@
 		      \item Precision refers to the standard deviation of a set of measurements on the same sample
 		      \item Figure 1.13 shows accuracy vs. precision on a dart board
 		      \item The precision of your tool should match the magnitude of the quantity to measure
-		      \item Estimate the position between the smallest graduation on marked rulers, burettes, etc.
+		      \item Estimate the position between the smallest marks on rulers, burettes, etc. (Figure 1.14)
 	      \end{itemize}
 	\item Precision is communicated through \emph{significant figures}
 	\item Consider measuring something $1.5~cm$ vs $1.4973~cm$
@@ -161,12 +161,13 @@
 	\item Identifying significant figures
 	      \begin{itemize}
 		      \item Any non-zero digits are significant
-		      \item Trailing zeros are significant if they come \emph{after a decimal}
-		      \item Zeros between two significant figures are also significant
 		      \item Leading zeros are \emph{never} significant
+		      \item Zeros between two significant figures are also significant
+		      \item Trailing zeros are significant if they come \emph{after a decimal}
 		      \item Practice: $4010$, $0.0034$, $7.100$, $639,000$, $6.390\times10^{5}$
 	      \end{itemize}
-	\item Scientific Notation not only makes it convenient to write very large or very small numbers, but it also communicates precision without any ambiguity
+	\item Scientific Notation communicates precision without any ambiguity; Every digit in the coefficient is \emph{always} significant!
+	\item Logs and antilogs: Digits in the characteristic are not significant but those in the mantissa are
 	\item Propagating sig. figs through calculations
 	      \begin{itemize}
 		      \item Identify the \# of sig figs and the position of the least significant digit for both numbers
@@ -180,6 +181,8 @@
 		      \item Do not round intermediate answers to avoid compounding rounding errors
 		      \item Keep track of both the \# of sig. figs and the LSD for each intermediate answer
 		      \item Practice: $(0.0045\times20,000.0)+(2813\times12)=34,000$
+
+		            ~\hphantom{Practice:} $\frac{12.3g+34g}{12.0cm^3+7.7cm^3}=2.4\nicefrac{g}{cm^3}$ (wrong answer with premature rounding)
 
 		            ~\hphantom{Practice:} $863\times\left[1255-\left(3.45\times108\right)\right]=762,000$
 	      \end{itemize}
@@ -213,6 +216,7 @@
 \section{Temperature Scales}
 \begin{itemize}
 	\item There are three common temperature scales, Fahrenheit, Celsius, and Kelvin
+	\item Kelvin is based on a zero-point of absolute zero
 	\item Kelvin is essential to use in some formulas, but Celsius may be convenient at other times
 	\item $T_{^\circ C}=\dfrac{5}{9}\left(T_F-32\right)$
 
@@ -221,6 +225,8 @@
 	      $T_K=T_{^\circ C}+273.15$
 
 	\item Practice: Convert the current temperature from Fahrenheit to Celsius and Kelvin
+
+	      ~\hphantom{Practice:} Find the Fahrenheit temperature of absolute zero ($-459.7^\circ F$)
 \end{itemize}
 
 \chapter{Atoms and the Periodic Table}
@@ -1805,7 +1811,6 @@
 \backmatter
 \chapter{Errata}
 \begin{itemize}
-	\item Figure 1.13 identifies (c) as neither precise nor accurate, but it \emph{is} accurate within the apparent precision
 	\item In Section 4.7, the decomposition of mercury(II) oxide should be: \ch{2 HgO(s) -> 2 Hg(l) + O2(g)}
 	\item The formation of water given in Section 6.8 should produce only 1 mole of water as a product
 	\item Slater's Rules in section 9.2 should treat deep core and V-1 electrons differently
