@@ -876,9 +876,100 @@
     \begin{itemize}
       \item Positive work is when the system volume decreases
       \item Negative work is when the system volume increases, or a force moves part of the surroundings
+      \item This $PV$ work is actually a bit problematic when trying to keep track of energy
+        \begin{itemize}
+		      \item $T$ is easy to measure with a thermometer, but both $P$ and (especially) $V$ are more difficult to measure
+		      \item Most of our work as chemists is done at constant pressure (open flask or in a balloon)
+		      \item Under constant pressure, we can use \emph{Enthalpy} ($H$) instead of internal energy ($U$)
+          \item Technically, $H=U+PV$
+		      \item While $U=q+w$, $H=q$ under constant pressure conditions (derivation in the book)
+		      \item So, we only need to worry about heat when we deal with $H$
+	      \end{itemize}
     \end{itemize}
 	\item Heat is usually associated with temperature changes or phase changes, as discussed previously
 	\item First Law of Thermodynamics: The energy of the universe is constant 
+  \item Enthalpy in chemical reactions:
+  \begin{itemize}
+    \item A balanced chemical reaction may also include an enthalpy of reaction $\Delta H$
+    \item This tells how much heat is produced or consumed with one mole of reaction
+    \item $\Delta H$ can be a conversion factor between heat and amounts of reactants or products
+
+          Practice: Consider the reaction \ch{N2(g) + 3 H2(g) -> 2 NH3(g)} $\Delta H = -92\frac{kJ}{mol}$
+
+          ~\hphantom{Practice:} If $2.25~g$ of \ch{H2} are consumed in the above reaction, how much heat is released? ($34.2~kJ$)
+
+          ~\hphantom{Practice:} If $54.6~kJ$ of heat are released, how many $g$ of \ch{NH3} will be produced? ($20.2~g$)
+  \end{itemize}
+  \item The ``Standard State'' is notated by $^\circ$ and is at $1M$ concentration and $1atm$ (or $1bar$), and technically doesn't include a temperature but values are often tabulated at $25^\circ C$
+  \item Standard Enthalpies of Combusion ($\Delta H^\circ_C$):
+    \begin{itemize}
+      \item Standard enthalpy of combustion is the energy released when something reacts with oxygen
+      \item Table 5.2 Lists the enthalpies of combustion for many combustible substances
+      \item These values are not synonymous with energy density, due to molar mass and density complicating the values
+    \end{itemize}
+  \item Because enthalpy is a state function (Figure 5.20), we can calculate values of $\Delta H$ without measuring them
+  \item Hess's Law: Any alternate path with the same starting and ending states will have the same\\overall $\Delta H$
+  \begin{itemize}
+    \item Drawing an energy level diagram can help to illustrate Hess's law (Figure 5.24 as an example)
+    \item Find $\Delta H$ for this reaction: \ch{C_{diamond} + O2(g)->CO2(g)} \hspace{1em} $\left(\Delta H=-395.4~\nicefrac{kJ}{mol}\right)$
+
+          \ch{C_{diamond} -> C_{graphite}} \hspace{2em} $\Delta H=-1.9~\nicefrac{kJ}{mol}$
+
+          \ch{C_{graphite} + O2(g)->CO2(g)} \hspace{2em} $\Delta H=-393.5~\nicefrac{kJ}{mol}$
+    \item The reverse of a reaction gives $-\Delta H$
+    \item Find $\Delta H$ for this reaction: \ch{C(s) + 1/2 O2(g)->CO(g)} \hspace{1em} $\left(\Delta H=-110~\nicefrac{kJ}{mol}\right)$
+
+          \ch{C(s) + O2(g) -> CO2(g)} \hspace{2em} $\Delta H=-393~\nicefrac{kJ}{mol}$
+
+          \ch{CO(g) + 1/2 O2(g) -> CO2(g)} \hspace{2em} $\Delta H=-283~\nicefrac{kJ}{mol}$
+
+    \item Double the reaction gives double the $\Delta H$
+    \item Consider trying to find $\Delta H$ for the reaction below:
+
+          \circled{$\star$} \ch{C2H5OH(l) + 2 O2(g) -> 2 CO(g) + 3 H2O(l)} \hspace{2em} $\Delta H = ?$
+    \item Find an alternate path using these reactions with known $\Delta H$:
+
+          \circled{A} \ch{C2H5OH(l) + 3 O2(g) -> 2 CO2(g) + 3 H2O(l)} \hspace{2em} $\Delta H=-1367~\nicefrac{kJ}{mol}$
+
+          \circled{B} \ch{CO(g) + 1/2 O2(g) -> CO2(g)} \hspace{2em} $\Delta H=-283~\nicefrac{kJ}{mol}$
+    \item The enthalpy of the first reaction can be found from the enthalpies of the other two
+    \item $\Delta H_{\star} = \Delta H_A - 2 \Delta H_B = -801\dfrac{kJ}{mol}$ \hspace{1em} (Draw the energy level diagram)
+
+          Practice: Find the enthalpy of reaction \circled{$\star$} using reactions \circled{A}, \circled{B}, and \circled{C}
+
+          \circled{$\star$} \ch{CS_2(l) + 3 O2(g) -> CO2(g) + 2 SO2(g)} \hspace{2em} $\left(\Delta H = -1075.0\right)$
+
+          \circled{A} \ch{C(s) + O2(g) -> CO2(g)} \hspace{2em} $\Delta H=-393.5~\nicefrac{kJ}{mol}$
+
+          \circled{B} \ch{S(s) + O2(g) -> SO2(g)} \hspace{2em} $\Delta H=-296.8~\nicefrac{kJ}{mol}$
+
+          \circled{C} \ch{C(s) + 2 S(s) -> CS2(l)} \hspace{2em} $\Delta H = 87.9~\nicefrac{kJ}{mol}$
+  \end{itemize}
+  \item Standard Enthalpies of Formation $\Delta H_{f}^\circ$
+    \begin{itemize}
+      \item To apply Hess's law to arbitrary reactions, you would need to devise an alternate path from an encyclopedia of known reactions -- this would be \emph{very} inconvenient
+      \item Instead of using random reactions from one state to another, it is useful to devise a \emph{standard state} for each element
+      \item The standard state is the most stable form of that element e.g. for O, it is \ch{O2(g)}, not \ch{O2(l)} or \ch{O3(g)}
+      \item Each compound will have a \emph{standard formation reaction} which forms it from its elements in their standard state
+
+            For water, that's \ch{H2(g) + 1/2 O2(g) -> H2O(l)} \hspace{1em} (This is one time a \ch{1/2} coefficient is acceptable)
+      \item The enthalpy for this reaction is called the compound's \emph{Standard Enthalpy of Formation} $\left(\Delta H^\circ_f\right)$
+      \item Elements in their standard state have $\Delta H^\circ_f = 0$
+      \item Any reaction can be framed as a combination of standard formation reactions
+        \begin{itemize}
+          \item First, the reactants are broken down into their elements (the \emph{reverse} of formation reactions)
+          \item Then, the elements are reassembled into the products (formation reactions)
+          \item The energy level diagram for any reaction is the same: reactants $\rightarrow$ elements $\rightarrow$ products
+          \item This pathway doesn't need to be \emph{practical}, it is enough to be theoretically \emph{possible}
+          \item $\Delta H_{rxn}=\sum\limits_{products}\nu\cdot\Delta H^\circ_f - \sum\limits_{reactants}\nu\cdot\Delta H^\circ_f$
+          \item This formula is general, for any reaction at all
+          \item Instead of an encyclopedia of thousands of reactions, we only need a table of $\Delta H^\circ_f$ values
+          \item Appendix G includes a large number of thermodynamic values like $\Delta H^\circ_f$
+        \end{itemize}
+        Practice: Find $\Delta H_{rxn}$ for~~ \ch{P4O10(s) + 6 H2O(l) -> 4 H3PO4(aq)} \hspace{1em} $\left(\Delta H_{rxn}=454.6~\dfrac{kJ}{mol}\right)$
+
+        ~\hphantom{Practice:} Find $\Delta H_{rxn}$ for~~ \ch{C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(g)} \hspace{1em} $\left(\Delta H_{rxn}=-2043.9~\dfrac{kJ}{mol}\right)$
+    \end{itemize}
 \end{itemize}
 
 \chapter{Electronic Structure and Periodic Properties of Elements}
