@@ -1128,14 +1128,14 @@
       \item Certain parts of those functions depend on integer numbers (like $n$ in the Rydberg equation)
       \item These integer numbers are called \emph{quantum numbers}
       \item Quantum numbers can be thought as an ``address'' for each electron (Street, Buildling, Unit, Name)
-            \begin{itemize}
-              \item $n$ -- Principal quantum number ($1$, $2$, \ldots) gives orbital shell, energy, and size
-              \item $l$ -- Angular momentum quantum number ($0$, $1$, \ldots, $n-1$) gives orbital subshell and shape
-              \item $l$ is why not all shells have all orbital types
-              \item $m_l$ -- Magnetic quantum number ($-l$, \ldots, $l$) gives orbital within a subshell (different spatial orientations)
-              \item $m_l$ is why subshells have different numbers of orbitals
-              \item $m_s$ -- Spin quantum number $\left(\pm \frac{1}{2}\right)$ gives ``spin'' of the electron (up- or down- arrow, Figure 6.23)
-            \end{itemize}
+        \begin{itemize}
+          \item $n$ -- Principal quantum number ($1$, $2$, \ldots) gives orbital shell, energy, and size
+          \item $l$ -- Angular momentum quantum number ($0$, $1$, \ldots, $n-1$) gives orbital subshell and shape
+          \item $l$ is why not all shells have all orbital types
+          \item $m_l$ -- Magnetic quantum number ($-l$, \ldots, $l$) gives orbital within a subshell (different spatial orientations)
+          \item $m_l$ is why subshells have different numbers of orbitals
+          \item $m_s$ -- Spin quantum number $\left(\pm \frac{1}{2}\right)$ gives ``spin'' of the electron (up- or down- arrow, Figure 6.23)
+        \end{itemize}
       \item Each electron in an atom/ion must have a \emph{unique} set of quantum numbers -- Pauli Exclusion Principle
       \item You should be able to point to the right electron given a set of quantum numbers, or give the 4 quantum numbers for an indicated electron in an energy level diagram
 
@@ -1166,14 +1166,14 @@
     \item This is the ground-state configuration of the element
   \end{itemize}
   \item We can use the periodic table as a cheat-sheet to the order of the subshells and electron configurations (Figure 6.27)
-	      \begin{itemize}
-		      \item The P. T. is actually quite long -- Lanthanides and Actinides have been cut and pasted
-		      \item Each region of the P. T. represents a different subshell
-		      \item The rows represent different shells
-		      \item The number of elements in each block is the number of electrons each shell can hold
-		      \item The $d$-block and $f$-block trail the row number by 1 and 2 ($d(-1)$ and $f(-2)$)
-		      \item The order of the subshells is found by simply following the elements and noting in which block they reside
-	      \end{itemize}
+    \begin{itemize}
+      \item The P. T. is actually quite long -- Lanthanides and Actinides have been cut and pasted
+      \item Each region of the P. T. represents a different subshell
+      \item The rows represent different shells
+      \item The number of elements in each block is the number of electrons each shell can hold
+      \item The $d$-block and $f$-block trail the row number by 1 and 2 ($d(-1)$ and $f(-2)$)
+      \item The order of the subshells is found by simply following the elements and noting in which block they reside
+    \end{itemize}
 	\item The arrangements of the electrons can be written as an electron configuration
 	\item Write the subshells, with their number of electrons as a superscript
 
@@ -1186,19 +1186,85 @@
 	\item A few transition metals have anomalous configurations (memorize only \ch{Cr} and \ch{Cu})
 	\item The Lanthanum and Actinium boundary also shows some anomalies (don't memorize them) 
   \item Figure 6.29 gives the valence configuration of every element's ground state
+	\item Technically, filled $d$ and $f$ subshells count as \emph{core}, and only the outermost $s$ and $p$ electrons will always count as \emph{valence}
+	\item This means that only the main group elements have a reliable pattern in their number of valence electrons
+	\item The number of valence electrons is the same as the ``A'' column names
 	\item We can write the configurations of ions as well
-	      \begin{itemize}
-		      \item For most, simply add or remove electrons according to the normal pattern
-		      \item Transition metals will lose the outermost $s$ electrons before they lose any $d$ electrons (This is why so many transition metals have a stable $2+$ ion)
-		      \item Ions and atoms with identical configurations are called \emph{isoelectronic} to each other
-	      \end{itemize}
-	      Practice: List several stable ions which are isoelectronic with \ch{Ar}
+    \begin{itemize}
+      \item For most, simply add or remove electrons according to the normal pattern
+      \item Transition metals will lose the outermost $s$ electrons before they lose any $d$ electrons (This is why so many transition metals have a stable $2+$ ion)
+      \item Ions and atoms with identical configurations are called \emph{isoelectronic} to each other
+    \end{itemize}
+    Practice: List several stable ions which are isoelectronic with \ch{Ar}
+\end{itemize}
+
+\paragraph*{Quiz 6.3 - Electronic Configurations}
+\paragraph*{Homework 6.3}
+\begin{itemize}
+  \item 49: Complete electron configurations
+  \item 53: Energy level diagram of valence electrons
+  \item 55: Identify an atom from its configuration
+  \item 57: Identify an ion from its configuration
+  \item 63: Electron configuration of an ion
+  \item 79: Isoelectronic configurations
 \end{itemize}
 
 \section{Periodic Variations in Element Properties}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item The sizes of atoms and ions is controlled by the attractive and repulsive forces between electrons and protons
+    \begin{itemize}
+      \item Electron and protons attract each other, shrinking the atomic size
+      \item Electrons repel each other, increasing the atomic size
+    \end{itemize}
+	\item Effective nuclear charge $\left(Z_{eff}\right)$ attempts to summarize these interactions
+    \begin{itemize}
+      \item The actual nuclear charge ($Z$) is just the number of protons (quite high for larger elements)
+      \item Core electrons will counteract much of the actual nuclear charge (called \emph{shielding})
+      \item $Z_{eff} = Z-S$ \hspace{2em} $S$ stands for ``Shielding''
+      \item $S$ can be closely approximated by the number of core electrons
+
+            Practice: Find $Z_{eff}$ for \ch{Mg}, \ch{S}, and \ch{Br} ($2$, $6$, and $7$)
+      \item Slater's rules gives a more sophisticated and accurate value for $S$
+      \item $1$ for deep core electrons, $0.85$ for $V-1$ electrons, and $0.35$ for all but one $V$ electron
+      \item Note that Slater's rules are not in your textbook
+
+            Practice: Find $Z_{eff}$ for the same elements using Slater's rules ($2.85$, $5.45$, and $7.6$)
+    \end{itemize}
+	\item Atomic radius increases down a column because you are adding and entire new shell for each row
+	\item Atomic radius decreases across a row because of the increasing $Z_{eff}$
+	\item This makes \ch{He} the smallest element, and \ch{Fr} the largest (Figure 6.30 and 6.31)
+	\item Anions are much larger and cations are much smaller than their neutral counterparts (Figure 6.32)
+  \item Ionization energy (IE) is the energy required to remove an electron
+    \begin{itemize}
+      \item For example, it is the energy for this process: \ch{Li -> Li^+ + e^-}
+      \item The two factors which control IE are radius, and $Z_{eff}$
+      \item It is easier to remove electrons (smaller IE) from larger atoms
+      \item It is easier to remove electrons (smaller IE) from atoms with lower $Z_{eff}$
+      \item Opposite to radius, \ch{He} has the highest IE, and \ch{Fr} has the lowest IE
+      \item There are breaks in this trend at the beginning and middle of the $p$ block (Figure 6.33 and 6.34)
+    \end{itemize}
+	\item Second- and third- ionization energy is the energy to remove a second and third electron (Table 6.3)
+    \begin{itemize}
+      \item Each successive electron is harder to remove
+      \item After the valence electrons are gone, removing a core electron is \emph{much} harder to remove
+    \end{itemize}
+	\item Electron affinity (EA) is the energy released when an electron is added
+    \begin{itemize}
+      \item Electron affinity is usually exothermic, so these values are mostly negative
+      \item The \emph{magnitude} of EA follows the same trend as IE
+      \item There are lots of breaks in the trend (Figure 6.35 is a mess), so don't worry too much about EA
+    \end{itemize}
+\end{itemize}
+
+\paragraph*{Quiz 6.4 - Periodic Trends}
+\paragraph*{Homework 6.4}
+\begin{itemize}
+  \item 67: Atomic radius trend
+  \item 71: Ionization energy trend
+  \item 75: Ranking atomic radii
+  \item 77: Ranking ionic radii
+  \item 85: Second ionization energy
+\end{itemize}
 
 \chapter{Chemical Bonding and Molecular Geometry}
 
