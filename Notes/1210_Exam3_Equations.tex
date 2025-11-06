@@ -1,87 +1,113 @@
-\documentclass[12pt, letterpaper]{memoir}
-\usepackage{NotesStyle}
-\setlength\parindent{0pt}
+\documentclass[12pt, addpoints, letterpaper]{exam}
+\usepackage{ExamStyle}
+
+% Openstax textbook
 
 \begin{document}
-	\pagestyle{empty}
+	\begin{center}
+		\vspace{12em}
+		{\Huge CHEM 1210 (Rowley) }
+
+		{\LARGE Exam 3 (Chapters 5-6) Fall 2025}
+	\end{center}
+
+  \vspace{\stretch{1}}
+  
   \begin{center}
-    {\Huge Exam 3 Equation Sheet}
+	{\large Formulas}
+
+  \hrulefill
   \end{center}
-
-  {\large Chapter 6}
-
-  \rule[1em]{\linewidth}{.1pt}
-
-	\begin{minipage}{0.5\linewidth}
-		$1cal=4.184J$
 	
-    $c_{\ch{H2O}}=4.187\frac{J}{g~K}$
+  \begin{minipage}[c][\stretch{1}][c]{0.495\linewidth}
+    \begin{equation*}
+      q=mc\Delta T
+    \end{equation*}
 
-		$q=mc\Delta T$
-	\end{minipage}
-	\begin{minipage}{0.5\linewidth}
-    $q=n\Delta H_{rxn}$
+    \begin{equation*}
+      \Delta U_{rxn}	= \frac{-C\Delta T}{n_{rxn}} \hspace{1em} \left(n_{rxn}=\frac{n_{limiting}}{\nu_{limiting}}\right)
+    \end{equation*}
 
-    $\Delta H_{rxn}	= \frac{-mc\Delta T}{n_{rxn}}$ \hspace{1em} $\left(n_{rxn}=\frac{n_{limiting}}{\nu_{limiting}}\right)$
+    \begin{equation*}
+      \nu\lambda=c
+    \end{equation*}
 
-    $\Delta U_{rxn}	= \frac{-C\Delta T}{n_{rxn}}$ 
+    \begin{equation*}
+      E=h\nu=\frac{hc}{\lambda}
+    \end{equation*}
 
-    $\Delta H_{rxn} = \sum\limits_{products}\nu\Delta H_{f}-\sum\limits_{reactants}\nu\Delta H_{f}$
-	\end{minipage}
+    \begin{equation*}
+      \frac{1}{\lambda} = R_H\left(\frac{1}{n_1^2}-\frac{1}{n_2^2}\right)
+    \end{equation*}
+  \end{minipage}
+  \rule[-125pt]{1.5pt}{250pt}
+  \begin{minipage}[c][\stretch{1}][c]{0.495\linewidth}
+    \begin{equation*}
+      q=n\Delta H_{rxn}
+    \end{equation*}
+
+    \begin{equation*}
+      \Delta H_{rxn}	= \frac{-mc\Delta T}{n_{rxn}} \hspace{1em} \left(n_{rxn}=\frac{n_{limiting}}{\nu_{limiting}}\right)
+    \end{equation*}
+
+    \begin{equation*}
+      \Delta H_{rxn} = \sum\limits_{products}\nu\Delta H_{f}-\sum\limits_{reactants}\nu\Delta H_{f}
+    \end{equation*}
+
+    \begin{equation*}
+      \Delta E = R_H\left(\frac{1}{n_f^2}-\frac{1}{n_i^2}\right)
+    \end{equation*}
+  \end{minipage}
+
+  \vspace{\stretch{1}}
+  \begin{center}
+	{\large Constants}
+
+  \hrulefill
+  \end{center}
 	
-  {\large Chapter 7}
+  \begin{minipage}[c]{0.495\linewidth}
+    \begin{equation*}
+      R=8.314 \dfrac{J}{mol~K}
+    \end{equation*}
 
-  \rule[1em]{\linewidth}{.1pt}
+    \begin{equation*}
+		  1cal=4.184J
+    \end{equation*}
+	
+    \begin{equation*}
+      c_{\ch{H2O}}=4.184\frac{J}{g~K}
+    \end{equation*}
 
-	\begin{minipage}{0.5\linewidth}
-		$PV=nRT$		
-		
-    $R=0.08206\frac{L~atm}{mol~K} =8.314\frac{J}{mol~K}$
-		
-		$1atm=760torr=760mmHg$
-
-    $\overline{KE}=\frac{3}{2}RT$
-
-    $\frac{rate_1}{rate_2}=\sqrt{\frac{M_2}{M_1}}$ \hspace{1em} or \hspace{1em}
-    $\frac{time_1}{time_2}=\sqrt{\frac{M_1}{M_2}}$
-			
-    $P=\frac{nRT}{V-nb}-a\left(\frac{n}{V}\right)^2$
-	\end{minipage}
-	\begin{minipage}{0.5\linewidth}
-		$\dfrac{P_1V_1}{T_1}=\dfrac{P_2V_2}{T_2}$
-
-    $P_{total}=\sum\limits_{components}P_i$
-
-    $P_i=\frac{n_iRT}{V}$		
-
-    $v_{rms}=\sqrt{\frac{3RT}{M}}$ \hspace{2em} $\left(M \mathrm{~in~} \frac{kg}{mol}\right)$
-
-    $\left[P+a\left(\frac{n}{V}\right)^2\right]\left(V-nb\right)=nRT$
-	\end{minipage}
-
-  {\large Chapter 8}
-
-  \rule[1em]{\linewidth}{.1pt}
-   
-	\begin{minipage}{0.5\linewidth}
-	  $c=2.998\times10^8\nicefrac{m}{s}$	
-
-		$\nu\lambda=c$	
-
-    $E=h\nu=\frac{hc}{\lambda}$
-
-    $KE_{photoelectron}=h\nu-\Phi$
-
-    $\frac{1}{\lambda} = R_H\left(\frac{1}{n_1^2}-\frac{1}{n_2^2}\right)$
-	\end{minipage}
-	\begin{minipage}{0.5\linewidth}
-
-    $h=6.626\times10^{-34}J~s$
+    \begin{equation*}
+      h=6.626\times10^{-34}J~s
+    \end{equation*}
     
-    $\Delta E = R_H\left(\frac{1}{n_f^2}-\frac{1}{n_i^2}\right)$
+  \end{minipage}	
+  \rule[-100pt]{1.5pt}{200pt}
+  \begin{minipage}[c]{0.495\linewidth}
+    \begin{equation*}
+      R=0.08206 \dfrac{L~atm}{mol~K}
+    \end{equation*}
 
-    $R_H = 2.179\times10^{-18}J$ 
+    \begin{equation*}
+      R_H = 2.179\times10^{-18}J
+    \end{equation*}
 
-    $R_H = 1.097\times10^7m^{-1}$
-	\end{minipage}
-\end{document}
+    \begin{equation*}
+      R_H = 1.097\times10^7m^{-1}
+    \end{equation*}
+
+    \begin{equation*}
+      c=2.998\times10^8\nicefrac{m}{s}
+    \end{equation*}
+  \end{minipage}	
+	
+  \vspace{\stretch{1}}
+	\newpage
+  \newgeometry{top=2mm, bottom=2mm, left=2mm, right=2mm}
+
+  \hspace{6em}	\includegraphics[width=1.25\textwidth, angle =90]{UpdatedTable}
+
+  \restoregeometry
+\end{document}	
