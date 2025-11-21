@@ -1705,34 +1705,170 @@
 \chapter{Gases}
 
 \section{Gas Pressure}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+	\item Figure 7.1 shows the different phases from a molecular perspective
+	\item The force a gas exerts is called pressure
+	\item Pressure can be measured in many ways, including with a barometer (Figure 7.2)
+	\item Atmospheric pressure depends on elevation, temperature, and humidity
+	\item $1~atm$ is just a standard for pressure under certain conditions
+	\item There are two other common units for pressure: $1~atm=760~torr=760~mmHg$
+	\item And two less common units for pressure: $1~atm=101.325~kPa=1.01325~bar$
+  \item Standard Temperature and Pressure (STP) is $0^{\circ}C$ and \emph{either} $1~atm$ \emph{or} $1~bar$, so until this dual usage is resolved it is unfortunately not a useful reference
+\end{itemize}
 
 \section{Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Boyle's Law
+    \begin{itemize}
+      \item In the \nth{17} and \nth{18} century, scientists were studying how gases responded to temperature and pressure
+      \item Boyle studied how volume changed with pressure at constant temperature (Figure 7.4)
+      \item Higher pressures lead to proportionately lower volumes
+      \item $V\propto \dfrac{1}{P}$ \hspace{2em} $PV=k$ \hspace{2em} $P_1V_1=P_2V_2$
+    \end{itemize}
+  \item Charles's Law
+    \begin{itemize}
+      \item Charles studied how volume changed with temperature at constant pressure (Figure 7.10)
+      \item Higher temperatures led to proportionately higher volumes
+      \item Figure 7.9 shows how the $V$/$T$ curve can be extrapolated back to absolute $0$ -- Indeed, this method gave rise to the notion of absolute $0$
+      \item Consider doubling the temperature at $1~K$ and at $1~^\circ C$. In the Kelvin scale, ``double the temperature'' has real, physical meaning (doubling the thermal energy)
+      \item We \emph{must} use the Kelvin temperature scale in these types of problems
+      \item $V\propto T$ \hspace{2em} $\dfrac{V}{T} = k$ \hspace{2em} $\dfrac{V_1}{T_1}=\dfrac{V_2}{T_2}$
+    \end{itemize}
+  \item The Combined Gas Law
+    \begin{itemize}
+      \item Boyle's law and Charles's law can be combined to compare states with different temperatures, volumes, and pressures
+      \item $\dfrac{P_1V_1}{T_1}=\dfrac{P_2V_2}{T_2}$
+
+            Practice: A balloon with $V=1.25~L$ at $P=0.850~atm$ and $T=284~k$ is released into the atmosphere where $P=0.430~atm$ and $T=243~K$. What is the new volume? ($2.11~L$)
+    \end{itemize}
+  \item{Avogadro's Law}
+    \begin{itemize}
+      \item For the previous laws, the proportionality constants $k$ were always different for different gases
+      \item Once we established molar masses, scientists could investigate the relationship between $n$ (\# of moles) and $P$, $V$, and $T$
+      \item Avogadro's law states that $V$ is proportional to $n$ at constant $T$ and $P$
+    \end{itemize}
+  \item Ideal Gas Law
+    \begin{itemize}
+      \item Avogadro's law was the final piece to get a universal gas constant. $k$ became $R$
+      \item $\dfrac{PV}{nT}=R$ is usually rearranged as $PV=nRT$
+      \item $R=0.08206~\dfrac{L~atm}{mol~K}$, but there are also other useful units (see Wikipedia page for $R$)
+      \item This is called the \emph{ideal gas law}. An \emph{ideal gas} is one that follows this law perfectly
+      \item Real gases will deviate from this law a little, but it is reliable at normal temperatures and pressures
+
+            Practice: Standard temperature and pressure are defined as $0.00~^\circ C$ and $1.00~atm$\\
+            Find the volume of $1.00~mol$ of an ideal gas at STP ($22.4~L$)
+    \end{itemize}
+\end{itemize}
 
 \section{Stoichiometry of Gaseous Substances, Mixtures, and Reactions}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Dalton's Law of Partial Pressures
+    \begin{itemize}
+      \item In a mixture of gases, each component will exhibit a pressure the same as if the others weren't there
+      \item The total pressure is the sum of all these \emph{partial pressures}
+      \item This means that we can find the total pressure of a mixture of gasses by counting the total moles of all gases present
+      \item We can find the pressure of one component from the total pressure and the relative composition
+      \item $P_A=\chi_A P_{total}$
+
+            Practice: \ch{O2} accounts for about $21\%$ of the molecules in our atmosphere. Find the partial pressure of \ch{O2} based on today's barometric pressure
+    \end{itemize}
+  \item Molar Mass and Density in Gas Law Calculations
+    \begin{itemize}
+      \item We can modify the ideal gas law to relate the molar mass of a gas to its density
+      \item $PV=nRT \rightarrow \dfrac{n}{V}=\dfrac{P}{RT} \rightarrow \dfrac{nM}{V} = \dfrac{PM}{RT} \rightarrow d\left(\dfrac{g}{L}\right)=\dfrac{PM}{RT}$
+      \item Note that this is a density in $\dfrac{g}{L}$. Gases are very diffuse and have very low densities
+
+            Practice: There are two ways we commonly create buoyancy in the atmosphere: \ch{He}, and hot air. Calculate the density of regular air (assume pure \ch{N2}) and \ch{He} at STP, and the density of regular air at $325~^\circ C$ ($0.625~\nicefrac{g}{L}$, $0.179~\nicefrac{g}{L}$, and $0.285~\nicefrac{g}{L}$)
+
+            Practice: An unknown gas is found to have density of $0.575~\dfrac{g}{L}$ at $22.4~^\circ C$ and $0.87~atm$. Give a reasonable guess for the chemical identity of the unknown gas (\ch{CH4})
+
+    \end{itemize}
+  \item Gases in Chemical Reactions
+    \begin{itemize}
+      \item We can also use the ideal gas law to predict volumes or pressures of a product in a chemical reaction
+
+            Practice: $0.25~g$ of \ch{Na} are reacted with acid according to the following equation:\\
+            \ch{2 Na(s) + 2 H^+(aq) -> 2 Na^+(aq) + H2(g)}\\
+            If $T=295~K$ and $P=0.875~atm$, what volume will the \ch{H2(g)} product occupy? ($0.150~L$)
+
+            Practice: Consider the reaction: \ch{2 Hg2O(s) -> 4 Hg(l) + O2(g)}\\
+            $2.50~g$ of \ch{Hg2O} are placed in a sealed $0.500~L$ chamber at $0.82~atm$ and decomposed through heat. Once thermal equilibrium is reached at $T=297.5~K$, what will be the final pressure inside the chamber? ($0.97~atm$)
+    \end{itemize}
+\end{itemize}
 
 \section{Effusion and Diffusion of Gases}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item The equation for the \nth{5} postulate is: $KE_{avg}=\dfrac{3}{2}k_BT$
+  \item $KE_{avg}$ is the average kinetic energy, and $k_B$ is the \emph{Boltzmann} constant
+  \item We don't really need to use the Boltzmann constant because $N_Ak_B=R$, and it is useful to talk about molar amounts anyway
+  \item So, we get $KE_{avg}=\dfrac{3}{2}RT$ \hspace{2em}  You should actually use $R=8.314~\dfrac{J}{mol~K}$
+  \item We also know that $KE=\dfrac{1}{2}Mv^2$ (note that this is also a molar amount), so we can write: $\dfrac{1}{2}Mv^2 = \dfrac{3}{2}RT$
+  \item This can be solved to give the rms average velocity for a gas particle: $v_{rms}=\sqrt{\dfrac{3RT}{M}}$
+  \item Note the ``unit purgatory'' issue here -- you must use $J\equiv\dfrac{kg~m^2}{s^2}$, and express $M$ in $kg$
+  \item \emph{rms velocity} is the square-root of the average of the squared velocities
+  \item $v_{rms}$ is used rather than mean velocity because the temperature is proportional to $v^2$, rather than $v$ itself
+  \item Figures 10.13 and 10.14 from BLMB show different velocity distributions for different gases and conditions
+
+        Practice: Find $v_{rms}$ for \ch{N2}, \ch{SF6}, and \ch{He} at $-20.00~^\circ C$ and $150.0~^\circ C$
+
+        ~\hphantom{Practice: } $-20~^\circ C$($474.8~\nicefrac{m}{s}$, $207.9~\nicefrac{m}{s}$, $1256~\nicefrac{m}{s}$)\hspace{1em} $150~^\circ C$($613.8~\nicefrac{m}{s}$, $269.4~\nicefrac{m}{s}$, $1624~\nicefrac{m}{s}$)
+  \item Diffusion is the spread of a gas from areas of high concentration to areas of low concentration
+    \begin{itemize}
+      \item Diffusion happens much more slowly than $v_{rms}$ because the molecules collide so frequently
+      \item Gas molecules take a random walk, deflected in a new direction with each collision
+      \item The \emph{mean free path} is only about $70~nm$ for STP
+      \item Higher pressures decrease the mean free path and slow down diffusion
+      \item In a vacuum, the diffusion rate approaches $v_{rms}$
+    \end{itemize}
+  \item Effusion is the slow leak of a gas through a hole
+  \item These two processes both depend on $v_{rms}$
+  \item Graham's law compares the effusion/diffusion rates of two gases: $\dfrac{r_1}{r_2}=\sqrt{\dfrac{M_2}{M_1}}$
+
+        Practice: Effusion can be observed by reinforcing a balloon with tape, then poking a hole through\\
+        ~\hphantom{Practice: } the tape
+
+        ~\hphantom{Practice: } Compare the effusion rate for a \ch{He} and \ch{N2} balloon $\left(r_{\ch{He}}=2.65r_{\ch{N2}}\right)$
+\end{itemize}
 
 \section{The Kinetic-Molecular Theory}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item The kinetic molecular theory of gases is a model which can be used to derive the ideal gas law from first principles
+  \item There are five postulates which define the theory:
+    \begin{enumerate}
+      \item Gases are composed of small particles that are in constant, random motion (Video 7.20)
+      \item The volume that is taken up by the molecules themselves is vanishingly small compared to the total volume of the gas
+      \item Forces between the particles are negligible
+      \item Molecular collisions are perfectly elastic
+      \item The average kinetic energy of the gas molecules is directly proportional to the temperature
+    \end{enumerate}
+  \item These postulates are grounded in mathematical equations which can be analyzed through statistical dynamics to apply to large ensembles of particles and give observable state properties
+    \begin{itemize}
+      \item Pressure results from the billions of collisions between gas particles and the chamber walls
+      \item Adding more gas particles will increase the frequency of collisions, raising the pressure
+      \item The average kinetic energy depends only on temperature, not chemical identity of the gas. This explains Dalton's law of partial pressures
+    \end{itemize}
+\end{itemize}
 
 \section{Non-Ideal Gas Behavior}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item The ideal gas law is \emph{technically} only valid for an ideal gas with no attractive/repulsive forces
+  \item Real gas particles \emph{are} attracted to each other, albeit weakly
+  \item These attractions are particularly important at high pressures and temperatures
+  \item For one mole of an ideal gas, $\dfrac{PV}{RT}=1$ at all temperatures and pressures
+  \item Figure 7.26 shows how $\dfrac{PV}{RT}$ varies with pressure and temperature
+  \item Figures 10.19 and 10.20 from BLMB show the compression factor for different gases and conditions
+  \item The van der Waals equation is an improvement on the ideal gas law, which works better for real gases
+    \begin{itemize}
+      \item $\left[P+a\left(\dfrac{n}{V}\right)^2\right]\left(V-nb\right)=nRT$ \hspace{1em} --or-- \hspace{1em} $P=\dfrac{nRT}{V-nb}-a\left(\dfrac{n}{V}\right)^2$
+      \item The $a$ term accounts for attractions between gas particles and reduces the pressure of real gases
+      \item The $b$ term accounts for the finite volume of gas particles and increases the pressure of real gases
+      \item Table 7.4 gives van der Waals $a$ and $b$ terms for many common gases
+    \end{itemize}
+    Practice: Use both the ideal gas law and the van der Waals equation to find the pressure for:\\
+    ~\hphantom{Practice: } $1.00~mol$ of \ch{CCl4} at $250~K$ in $10.0~L$ and $1.00~L$
+
+    ~\hphantom{Practice: } ($2.0515~atm$, $1.881~atm$, $20.515~atm$, and $37.79~atm$)
+\end{itemize}
 
 \chapter{Liquids and Solids}
 
