@@ -4,41 +4,41 @@ import calendar
 import numpy as np
 
 #  Change these values to generate a new course schedule
-year = 2025
+year = 2026
 # Format is [month, day]
-start = [8, 27]
-end = [12, 7]
+start = [1, 7]
+end = [4, 19]
 
 # 0-M, 1-T, 2-W, 3-R, 4-F, 5-S, 6-S
 Days = [0, 1, 2, 4]
 
 # Format is (month, day): 'Holiday Name'
 # Fall Holidays
-Holidays = {
-     (9, 1): "Labor Day",
-     (10, 13): "Fall Break",
-     (10, 14): "Fall Break",
-     (11, 24): "Thanksgiving Break",
-     (11, 25): "Thanksgiving Break",
-     (11, 26): "Thanksgiving Break",
-     (11, 27): "Thanksgiving Break",
-     (11, 28): "Thanksgiving Break",
- }
+# Holidays = {
+#      (9, 1): "Labor Day",
+#      (10, 13): "Fall Break",
+#      (10, 14): "Fall Break",
+#      (11, 24): "Thanksgiving Break",
+#      (11, 25): "Thanksgiving Break",
+#      (11, 26): "Thanksgiving Break",
+#      (11, 27): "Thanksgiving Break",
+#      (11, 28): "Thanksgiving Break",
+#  }
 # Summer Holidays
 # Holidays = {(7, 3): '\\nth{4} July',
 #             (7, 24): "\\nth{24} July"
 #             }
 # Spring Holidays
-# Holidays = {
-#     (1, 16): "Martin Luther King Day",
-#     (2, 20): "President's Day",
-#     (2, 27): "Spring Break",
-#     (2, 28): "Spring Break",
-#     (3, 1): "Spring Break",
-#     (3, 2): "Spring Break",
-#     (3, 3): "Spring Break",
-#     (3, 28): "Festival of Excellence",
-# }
+Holidays = {
+    (1, 19): "Martin Luther King Day",
+    (2, 16): "President's Day",
+    (3, 9): "Spring Break",
+    (3, 10): "Spring Break",
+    (3, 11): "Spring Break",
+    (3, 12): "Spring Break",
+    (3, 13): "Spring Break",
+    (3, 31): "Festival of Excellence",
+}
 
 # Format is ['title', 'chapter', length] for topics
 # Format is ['Exam #'] for midterm exams
