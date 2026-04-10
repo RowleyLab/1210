@@ -1,0 +1,22 @@
+# avogadro generated ORCA file
+# N2 | Geometry Optimization | revPBE/def2-TZVP
+# 
+! Opt revPBE def2-TZVP 
+
+%maxcore 16384
+
+%pal
+   nprocs 1
+end
+
+%output
+   print[p_mos] 1
+   print[p_basis] 2
+end
+
+* xyz 0 1
+   N     -3.785519    1.240086   -0.000003
+   N     -2.662005    1.207043   -0.000010
+*
+
+
